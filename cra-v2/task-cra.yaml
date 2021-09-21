@@ -121,6 +121,8 @@ spec:
     - name: scan
       image: $(params.cra-scan-image)
       env:
+        - name: REDHAT_APIKEY
+          value: ${params.idsorg_redhat_apikey}
         - name: API
           value: $(params.ibmcloud-api)
         - name: ENV_PROPS
