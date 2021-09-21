@@ -119,6 +119,7 @@ spec:
       type: Opaque
       stringData:
         API_KEY: $(params.apikey)
+        REDHAT_API_KEY: $(params.idsorg_redhat_apikey)
     - apiVersion: tekton.dev/v1beta1
       kind: PipelineRun
       metadata:
